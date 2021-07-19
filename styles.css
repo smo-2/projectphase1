@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color:#fff;
+}
+li,a,button{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #242524;
+    text-decoration: none;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;}
+
+.logo {
+    cursor: pointer; color: #242524; font-family: "orginal surfer";
+    font-weight:400;
+    font-size: 60px;
+}
+.nav__links {
+    list-style: none;
+}
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover{
+    color: #87989c;
+}
+button{
+    padding: 9px 25px;
+    background-color: #87989c;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{background-color: #fff;
+}
+/* header */
+.header{
+    padding: 15px 10px 70px 10px;
+    text-align: center;  font-size: 20px; color: #242524; font-family: "orginal surfer";
+}
+/*images slider */
+.slider{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.sliderchild{
+    height: 100%;
+    width: 500%;
+    animation: slider infinite 20s;
+}
+.imageicon{
+    height: 100%;
+    width: 20%;
+    background-color: white;
+    float: left;
+}
+@keyframes slider{
+    18.5%{
+        margin-left: -100%;
+    }
+    27%{
+        margin-left: -100%;}
+    39.5%{
+            margin-left: -200%;
+        }
+        52%{
+            margin-left: -200%;
+        }
+        64%{
+            margin-left: -300%;
+        }
+        77%{
+            margin-left: -300;
+        }
+        89%{
+            margin-left: -400%;}
+            102%{
+                margin-left: -400%;
+            }
+        }
+
+        /*content*/
+        .row{
+            display:flex;
+            
+        }
+        .side{
+            background-color: #f1f1f1;
+            text-align:center;
+            position: relative;
+            padding: 10px;
+        }
+        span{
+            border-bottom: 4px solid #87989c  ;
+        }
+        
+        .main{
+            flex: 100%;
+            text-align:center;
+            padding: 90px;
+            background-color: #f1f1f1;
+            position: relative;
+        }
+        
+
+
+    
+        .footer{
+            padding: 20px;
+            text-align: center;
+            background-color: #ddd;
+        }
+
+    
+
+

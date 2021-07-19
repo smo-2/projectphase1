@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=devive-width, initial-scale=1">
+    <title> my blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="Bloges.css">
+
+<header>
+    <ul class="logo">WEBSITE my blogs</ul>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About US.html">About Us</a></li>
+                
+            </ul>
+            </nav>
+            <a class="cta" href="contact.html"><button>Contact</button></a>
+    </header>
+</head>
+<body>
+    <form onsubmit="return addItem('list',this.inputItem,this.inputItem2)">
+        <div class="form">
+            <h1>To-Do list</h1>
+            <textarea class="textarea" type="text" id="inputItem" placeholder="Enter a Task"
+            rows="4" cols="50" ></textarea><br></br>
+            <input type="submit" class="btn btn-danger">
+        </div>
+    </form>
+    <ul id="list"></ul>
+    <script src="Bloges.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+
+* {
+    box-sizing: border-box;
+/*  margin: 0;
+    padding: 0;*/
+}
+li,a,button{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #242524;
+    text-decoration: none;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;}
+
+.logo {
+    cursor: pointer; color: #242524; font-family: "orginal surfer";
+    font-weight:400;
+    font-size: 60px;
+}
+.nav__links {
+    list-style: none;
+}
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover{
+    color: #87989c;
+}
+button{
+    padding: 9px 25px;
+    background-color: #87989c;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{background-color: #fff;
+}
+/*post*/
+
+.container{
+    display: grid;
+    grid-template-rows: 3fr 7fr;
+    grid-template-columns: 3fr 5fr 7fr;
+    top:50%;
+    padding: 100px;
+    height: 100vh;
+    width:100vw;
+}
+.entry__area{
+    background-color: palevioletred;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    left: 40px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+
+}
+.posts__area{
+background-color: rebeccapurple;
+    grid-column: 2/3;
+    grid-row: 2/3;
+/* text-align: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    overflow-x: scroll;*/
+}
+.post_container{
+    height: 20px;
+
+}
